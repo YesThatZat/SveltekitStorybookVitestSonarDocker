@@ -2,17 +2,9 @@
 
 Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
 
-## Creating a project
+## What is this?
 
-If you're seeing this, you've probably already done this step. Congrats!
-
-```sh
-# create a new project in the current directory
-npx sv create
-
-# create a new project in my-app
-npx sv create my-app
-```
+This is an attempt at a sveltekit configuration that satisfies particular enterprise deployment requirements. Its not finished, you shouldn't base yourself on this.
 
 ## Developing
 

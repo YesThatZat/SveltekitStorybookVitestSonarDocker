@@ -8,6 +8,20 @@ export default defineConfig({
 	test: {
 		expect: { requireAssertions: true },
 
+		coverage: {
+			provider: 'v8',
+			reporter: ['lcov', 'text', 'json-summary'],
+			reportsDirectory: './coverage',
+			exclude: [
+				'**/node_modules/**',
+				'**/.svelte-kit/**',
+				'**/dist/**',
+				'**/build/**',
+				'**/coverage/**',
+				'**/storybook-static/**'
+			]
+		},
+
 		projects: [
 			{
 				extends: './vite.config.ts',
