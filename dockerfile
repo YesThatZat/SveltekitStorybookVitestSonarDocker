@@ -3,7 +3,7 @@
 ############################
 # 1) Build stage
 ############################
-FROM node:20-alpine AS build
+FROM node:24-alpine AS build
 
 WORKDIR /app
 
@@ -28,7 +28,7 @@ RUN npm prune --omit=dev
 ############################
 # 2) Runtime stage
 ############################
-FROM node:20-alpine AS runtime
+FROM node:24-alpine AS runtime
 
 ENV NODE_ENV=production
 WORKDIR /app
